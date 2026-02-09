@@ -9,6 +9,8 @@ public struct ContentView: View {
         let margin = LDGrid.horizontalMargin(for: horizontalSizeClass)
 
         return VStack(alignment: .leading, spacing: LDSpacing.s16) {
+            Header(title: "Last Dance")
+
             Text("Last Dance")
                 .ldStyle(LDTypography.largeTitle, color: LDColor.label)
 
