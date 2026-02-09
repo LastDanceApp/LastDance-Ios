@@ -19,7 +19,7 @@ public struct LDButtonStyle: ButtonStyle {
             .padding(.horizontal, LDSpacing.s24)
             .frame(minHeight: LDLayout.minTouch)
             .background(
-                RoundedRectangle(cornerRadius: LDRadius.textField, style: .continuous)
+                RoundedRectangle(cornerRadius: LDRadius.button, style: .continuous)
                     .fill(backgroundColor)
             )
             .overlay(border)
@@ -29,37 +29,33 @@ public struct LDButtonStyle: ButtonStyle {
             .animation(LDAnimation.standard, value: configuration.isPressed)
     }
 
-    private var backgroundColor: Color {
-        switch kind {
-        case .primary:
-            return LDColor.primary
-        case .secondary:
-            return LDColor.systemGray6
-        case .destructive:
-            return Color(UIColor.systemRed)
-        }
-    }
-
     private var foregroundColor: Color {
         switch kind {
         case .primary:
-            return Color.white
+            return .white
         case .secondary:
-            return LDColor.label
+            return LDColor.Text.primary
         case .destructive:
-            return Color.white
+            return .white
+        }
+    }
+
+    private var backgroundColor: Color {
+        switch kind {
+        case .primary:
+            return LDColor.Brand.primary
+        case .secondary:
+            return LDColor.Background.surface
+        case .destructive:
+            return LDColor.Status.danger
         }
     }
 
     private var border: some View {
         Group {
             if kind == .secondary {
-                RoundedRectangle(cornerRadius: LDRadius.textField, style: .continuous)
-                    .stroke(LDColor.systemGray4, lineWidth: 1)
-            }
-            if kind == .primary {
-                RoundedRectangle(cornerRadius: LDRadius.button, style: .circular)
-                    .stroke(LDColor.systemGray4, lineWidth: 1)
+                RoundedRectangle(cornerRadius: LDRadius.button, style: .continuous)
+                    .stroke(LDColor.Text.disabled, lineWidth: 1)
             }
         }
     }
@@ -75,7 +71,7 @@ public struct LDCard<Content: View>: View {
     public var body: some View {
         content
             .padding(LDSpacing.s16)
-            .background(LDColor.secondarySystemBackground)
+            .background(LDColor.Background.surface)
             .clipShape(RoundedRectangle(cornerRadius: LDRadius.card, style: .continuous))
     }
 }
@@ -85,7 +81,7 @@ public struct LDTextFieldStyle: ViewModifier {
         content
             .padding(.horizontal, LDSpacing.s12)
             .frame(minHeight: LDLayout.minTouch)
-            .background(LDColor.secondarySystemBackground)
+            .background(LDColor.Background.surface)
             .clipShape(RoundedRectangle(cornerRadius: LDRadius.textField, style: .continuous))
     }
 }

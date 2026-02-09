@@ -9,14 +9,17 @@
 /* Begin PBXBuildFile section */
 		06FCF078FC77939941CFA046 /* LastDanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E21BBF6C4E0335843C8743 /* LastDanceApp.swift */; };
 		1CBFA40C7B777539C2E73A63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657C5D82925FA51DA5382738 /* ContentView.swift */; };
+		371732EFD352D07A10A99129 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BABA587AB68202D029DB34A /* ButtonStyles.swift */; };
 		50327601EAFECE898607A46A /* LDLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FC8A9BD44C42149DEFA28B /* LDLayout.swift */; };
 		54E34B1CBB7D43FE5DB944C5 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7AE43EBAE57CB2115F18DC /* UserModel.swift */; };
 		5B734D795501F74651CBDFD2 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAB9452F4063033656DB873 /* UserViewModel.swift */; };
 		79D9DD3FF880E2E1B5A7FE75 /* TuistAssets+LastDance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A475AF12276B7AE9E8DB38 /* TuistAssets+LastDance.swift */; };
+		8B58DBD5930D8C3A22417EE5 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = D380926B4EACC2E90982412C /* Header.swift */; };
 		9423E6BC6020C63E355A4DF9 /* LDTypography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A036680D0264795AD530983 /* LDTypography.swift */; };
 		A99B3ADEF963AA98B430A380 /* LDColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAC5B3D299E6CD56790B3B2 /* LDColor.swift */; };
 		AD9A68105A5AC39C1494AD95 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B1CDAE71C2812629FEA03 /* UserView.swift */; };
 		CA79FF8894746FA55B7D7404 /* LDComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A9E9F343CD40B01E59D2D /* LDComponents.swift */; };
+		E336A0B4D118B3B87D4C8AD1 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD731D596134A726DDB777EB /* ActionButton.swift */; };
 		F500D4D0872E0C4ACA8C90D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C88E14D7BCBB6EA5224DE8BE /* Preview Assets.xcassets */; };
 		F5DE902E5188024C01403B43 /* TuistBundle+LastDance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1393640FD0DB5F80C824145C /* TuistBundle+LastDance.swift */; };
 		FB0AFB6F51BB32B68B11BDD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D0369C6389D5981844A957B /* Assets.xcassets */; };
@@ -41,6 +44,7 @@
 		28FC8A9BD44C42149DEFA28B /* LDLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDLayout.swift; sourceTree = "<group>"; };
 		34A475AF12276B7AE9E8DB38 /* TuistAssets+LastDance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+LastDance.swift"; sourceTree = "<group>"; };
 		3BAB9452F4063033656DB873 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		4BABA587AB68202D029DB34A /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
 		53E21BBF6C4E0335843C8743 /* LastDanceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastDanceApp.swift; sourceTree = "<group>"; };
 		5DAC5B3D299E6CD56790B3B2 /* LDColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDColor.swift; sourceTree = "<group>"; };
 		60F923E0C7FBADF77B364C31 /* LastDance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LastDance.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,12 +53,14 @@
 		7A036680D0264795AD530983 /* LDTypography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDTypography.swift; sourceTree = "<group>"; };
 		7D0369C6389D5981844A957B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		801B1CDAE71C2812629FEA03 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		AD731D596134A726DDB777EB /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
 		C88E14D7BCBB6EA5224DE8BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D380926B4EACC2E90982412C /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		FD576EE22317307216D758E6 /* LastDance-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "LastDance-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		F8CD2A682F39EDBA00752A23 /* Common2 */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Common2; sourceTree = "<group>"; };
+		F8CD2A812F3A448300752A23 /* Main */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Main; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,7 @@
 		0F5C99413AE41E9ABF8A5BC7 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				F8CD2A812F3A448300752A23 /* Main */,
 				CA4D47744BA26F4C58161349 /* LoginSingup */,
 			);
 			path = Features;
@@ -98,6 +105,14 @@
 				801B1CDAE71C2812629FEA03 /* UserView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		1F1AAAFAF84219911F4C8A80 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A4757A8D86985B141D53872C /* Components */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		2E2375A0D07CE8EEBF211788 /* InfoPlists */ = {
@@ -145,6 +160,16 @@
 			);
 			sourceTree = "<group>";
 		};
+		A4757A8D86985B141D53872C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D380926B4EACC2E90982412C /* Header.swift */,
+				AD731D596134A726DDB777EB /* ActionButton.swift */,
+				4BABA587AB68202D029DB34A /* ButtonStyles.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		A7D490B3ACEC18DCE7BD0389 /* Project */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,7 +199,7 @@
 		BB04DFB0A5A88B3AF72FAFA6 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				F8CD2A682F39EDBA00752A23 /* Common2 */,
+				1F1AAAFAF84219911F4C8A80 /* Common */,
 				5FB62F32AD5142F97DCE41F4 /* DesignSystem */,
 				0F5C99413AE41E9ABF8A5BC7 /* Features */,
 				657C5D82925FA51DA5382738 /* ContentView.swift */,
@@ -227,7 +252,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				F8CD2A682F39EDBA00752A23 /* Common2 */,
+				F8CD2A812F3A448300752A23 /* Main */,
 			);
 			name = LastDance;
 			packageProductDependencies = (
@@ -284,6 +309,9 @@
 			files = (
 				79D9DD3FF880E2E1B5A7FE75 /* TuistAssets+LastDance.swift in Sources */,
 				F5DE902E5188024C01403B43 /* TuistBundle+LastDance.swift in Sources */,
+				8B58DBD5930D8C3A22417EE5 /* Header.swift in Sources */,
+				E336A0B4D118B3B87D4C8AD1 /* ActionButton.swift in Sources */,
+				371732EFD352D07A10A99129 /* ButtonStyles.swift in Sources */,
 				1CBFA40C7B777539C2E73A63 /* ContentView.swift in Sources */,
 				A99B3ADEF963AA98B430A380 /* LDColor.swift in Sources */,
 				CA79FF8894746FA55B7D7404 /* LDComponents.swift in Sources */,
