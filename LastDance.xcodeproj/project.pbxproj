@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 70;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06FCF078FC77939941CFA046 /* LastDanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E21BBF6C4E0335843C8743 /* LastDanceApp.swift */; };
+		1CBFA40C7B777539C2E73A63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657C5D82925FA51DA5382738 /* ContentView.swift */; };
+		79D9DD3FF880E2E1B5A7FE75 /* TuistAssets+LastDance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A475AF12276B7AE9E8DB38 /* TuistAssets+LastDance.swift */; };
+		F500D4D0872E0C4ACA8C90D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C88E14D7BCBB6EA5224DE8BE /* Preview Assets.xcassets */; };
+		F5DE902E5188024C01403B43 /* TuistBundle+LastDance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1393640FD0DB5F80C824145C /* TuistBundle+LastDance.swift */; };
+		FB0AFB6F51BB32B68B11BDD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D0369C6389D5981844A957B /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		56832624A2F2E57CCDA5D23C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1393640FD0DB5F80C824145C /* TuistBundle+LastDance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+LastDance.swift"; sourceTree = "<group>"; };
+		34A475AF12276B7AE9E8DB38 /* TuistAssets+LastDance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+LastDance.swift"; sourceTree = "<group>"; };
+		53E21BBF6C4E0335843C8743 /* LastDanceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastDanceApp.swift; sourceTree = "<group>"; };
+		60F923E0C7FBADF77B364C31 /* LastDance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LastDance.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		657C5D82925FA51DA5382738 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7D0369C6389D5981844A957B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C88E14D7BCBB6EA5224DE8BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD576EE22317307216D758E6 /* LastDance-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "LastDance-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		37C54D9A2F39D97600F66252 /* App */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = App; sourceTree = "<group>"; };
+		37C54D9B2F39D98000F66252 /* Common */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Common; sourceTree = "<group>"; };
+		37C54D9C2F39D98600F66252 /* DesignSystem */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = DesignSystem; sourceTree = "<group>"; };
+		37C54D9D2F39D98C00F66252 /* Features */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Features; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17C00311767D2F263036BD6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A8354BE1E4C4E94314028B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60F923E0C7FBADF77B364C31 /* LastDance.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E2375A0D07CE8EEBF211788 /* InfoPlists */ = {
+			isa = PBXGroup;
+			children = (
+				FD576EE22317307216D758E6 /* LastDance-Info.plist */,
+			);
+			path = InfoPlists;
+			sourceTree = "<group>";
+		};
+		408199936441D9AB7E405675 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B0590FD4CFE5F7F03DE3ED75 /* Preview Content */,
+				7D0369C6389D5981844A957B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		40F9DD598E86CAE2D0A373B6 /* Derived */ = {
+			isa = PBXGroup;
+			children = (
+				2E2375A0D07CE8EEBF211788 /* InfoPlists */,
+				C46ECD857DF005B54684FCB2 /* Sources */,
+			);
+			path = Derived;
+			sourceTree = "<group>";
+		};
+		668C51916FCE54A2F75E51BE = {
+			isa = PBXGroup;
+			children = (
+				0A8354BE1E4C4E94314028B1 /* Products */,
+				A7D490B3ACEC18DCE7BD0389 /* Project */,
+			);
+			sourceTree = "<group>";
+		};
+		A7D490B3ACEC18DCE7BD0389 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				40F9DD598E86CAE2D0A373B6 /* Derived */,
+				AFA14EE32D1117AF65EA021E /* LastDance */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		AFA14EE32D1117AF65EA021E /* LastDance */ = {
+			isa = PBXGroup;
+			children = (
+				408199936441D9AB7E405675 /* Resources */,
+				BB04DFB0A5A88B3AF72FAFA6 /* Sources */,
+			);
+			path = LastDance;
+			sourceTree = "<group>";
+		};
+		B0590FD4CFE5F7F03DE3ED75 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C88E14D7BCBB6EA5224DE8BE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BB04DFB0A5A88B3AF72FAFA6 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				37C54D9D2F39D98C00F66252 /* Features */,
+				37C54D9C2F39D98600F66252 /* DesignSystem */,
+				37C54D9B2F39D98000F66252 /* Common */,
+				37C54D9A2F39D97600F66252 /* App */,
+				657C5D82925FA51DA5382738 /* ContentView.swift */,
+				53E21BBF6C4E0335843C8743 /* LastDanceApp.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C46ECD857DF005B54684FCB2 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				34A475AF12276B7AE9E8DB38 /* TuistAssets+LastDance.swift */,
+				1393640FD0DB5F80C824145C /* TuistBundle+LastDance.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4089A2752C5D52898F167AF /* LastDance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24736464437D01A458FBB058 /* Build configuration list for PBXNativeTarget "LastDance" */;
+			buildPhases = (
+				1C1CFF1BFF1453E4198E9A6C /* Sources */,
+				6B53FD6531323127CBEC03EE /* Resources */,
+				17C00311767D2F263036BD6A /* Frameworks */,
+				56832624A2F2E57CCDA5D23C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				37C54D9A2F39D97600F66252 /* App */,
+				37C54D9B2F39D98000F66252 /* Common */,
+				37C54D9C2F39D98600F66252 /* DesignSystem */,
+				37C54D9D2F39D98C00F66252 /* Features */,
+			);
+			name = LastDance;
+			packageProductDependencies = (
+			);
+			productName = LastDance;
+			productReference = 60F923E0C7FBADF77B364C31 /* LastDance.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0847DE0AA6AFE0F1BF4680EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = 372D40E316BE269DAECE173C /* Build configuration list for PBXProject "LastDance" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 668C51916FCE54A2F75E51BE;
+			packageReferences = (
+				10A7AA3A16AFEBAB2FB4EDFA /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 0A8354BE1E4C4E94314028B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4089A2752C5D52898F167AF /* LastDance */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B53FD6531323127CBEC03EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB0AFB6F51BB32B68B11BDD4 /* Assets.xcassets in Resources */,
+				F500D4D0872E0C4ACA8C90D5 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C1CFF1BFF1453E4198E9A6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79D9DD3FF880E2E1B5A7FE75 /* TuistAssets+LastDance.swift in Sources */,
+				F5DE902E5188024C01403B43 /* TuistBundle+LastDance.swift in Sources */,
+				1CBFA40C7B777539C2E73A63 /* ContentView.swift in Sources */,
+				06FCF078FC77939941CFA046 /* LastDanceApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0D040F0514108F00BA248717 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		26527E7837C866A3130E655B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C34BCD7898F127CA124DD19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Derived/InfoPlists/LastDance-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.tuist.LastDance;
+				PRODUCT_NAME = LastDance;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E92B2B74654AC76B1B3A110E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Derived/InfoPlists/LastDance-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.tuist.LastDance;
+				PRODUCT_NAME = LastDance;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24736464437D01A458FBB058 /* Build configuration list for PBXNativeTarget "LastDance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C34BCD7898F127CA124DD19 /* Debug */,
+				E92B2B74654AC76B1B3A110E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		372D40E316BE269DAECE173C /* Build configuration list for PBXProject "LastDance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D040F0514108F00BA248717 /* Debug */,
+				26527E7837C866A3130E655B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		10A7AA3A16AFEBAB2FB4EDFA /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+	};
+	rootObject = 0847DE0AA6AFE0F1BF4680EA /* Project object */;
+}
