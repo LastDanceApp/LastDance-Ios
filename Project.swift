@@ -17,8 +17,12 @@ let project = Project(
                     ],
                 ]
             ),
-            sources: ["LastDance/Sources/**"],
-            resources: ["LastDance/Resources/**"],
+            sources: [
+                .glob("LastDance/Sources/**", excluding: ["**/.gitkeep"])
+            ],
+            resources: [
+                .glob("LastDance/Resources/**", excluding: ["**/.gitkeep"])
+            ],
             dependencies: []
         )
     ]
