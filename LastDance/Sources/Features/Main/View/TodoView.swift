@@ -34,8 +34,20 @@ struct TodoCardView : View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 20, height: 20)
+                Text(String(watchersNum))
+                    .foregroundColor(Color.blue)
+                    .font(.system(size: 14, weight: .light, design:.monospaced))
             }
             ProgressBar(value: Double(leftDays) / Double(limitDays),color: status.color)
+            HStack{
+                Text("0일")
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+                Spacer()
+                Text(String(limitDays) + "일 제한")
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+            }
         }
         .padding(LDSpacing.s16)
         .background(LDColor.Background.surface)
