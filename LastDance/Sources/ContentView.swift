@@ -12,10 +12,10 @@ public struct ContentView: View {
             Header(title: "Last Dance")
 
             Text("Last Dance")
-                .ldStyle(LDTypography.largeTitle, color: LDColor.label)
+                .ldStyle(LDTypography.largeTitle, color: LDColor.Text.primary)
 
             Text("사용자를 재촉하지 않고, 이미 다가온 사실을 조용히 보여준다.")
-                .ldStyle(LDTypography.body, color: LDColor.secondaryLabel)
+                .ldStyle(LDTypography.body, color: LDColor.Background.surface)
 
             LDCard {
                 VStack(alignment: .leading, spacing: LDSpacing.s12) {
@@ -23,7 +23,7 @@ public struct ContentView: View {
                         .ldStyle(LDTypography.headline)
 
                     Text("남은 시간: 3일")
-                        .ldStyle(LDTypography.callout, color: LDColor.primary)
+                        .ldStyle(LDTypography.caption, color: LDColor.Brand.primary)
                 }
             }
 
@@ -41,8 +41,8 @@ public struct ContentView: View {
         .padding(.horizontal, margin)
         .padding(.top, LDSpacing.s24)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(LDColor.systemBackground)
-        .tint(LDColor.primary)
+        .background(LDColor.Background.surface)
+        .tint(LDColor.Brand.primary)
     }
 }
 

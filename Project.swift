@@ -21,7 +21,7 @@ let project = Project(
                 .glob("LastDance/Sources/**", excluding: ["**/.gitkeep"])
             ],
             resources: [
-                .glob("LastDance/Resources/**", excluding: ["**/.gitkeep"])
+                .glob(pattern: "LastDance/Resources/**", excluding: ["**/.gitkeep"])
             ],
             dependencies: []
         )

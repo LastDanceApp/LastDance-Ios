@@ -13,7 +13,7 @@ struct Header: View {
                     .frame(width: 20, height: 20)
 
                 Text(title)
-                    .ldStyle(LDTypography.headline, color: LDColor.label)
+                    .ldStyle(LDTypography.headline, color: LDColor.Text.primary)
             }
 
             Spacer()
@@ -35,7 +35,7 @@ struct Header: View {
         .overlay(alignment: .bottom) {
             Rectangle()
                 .frame(height: 1)
-                .foregroundStyle(LDColor.systemGray4)
+                .foregroundStyle(LDColor.Text.secondary)
         }
     }
 }
