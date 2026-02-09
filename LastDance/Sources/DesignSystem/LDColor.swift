@@ -31,6 +31,11 @@ public enum LDColor {
             dark: UIColor(white: 0.33, alpha: 0.65)
         )
     }
+    
+    public enum Border{
+        public static let divider = Color(hex: 0xE5E5E5)
+    }
+    
 }
 
 public extension Color {

@@ -35,7 +35,7 @@ struct Header: View {
         .overlay(alignment: .bottom) {
             Rectangle()
                 .frame(height: 1)
-                .foregroundStyle(LDColor.Text.secondary)
+                .foregroundStyle(LDColor.Border.divider)
         }
     }
 }
@@ -43,3 +43,4 @@ struct Header: View {
 #Preview {
     Header(title: "습관 증인")
 }
+

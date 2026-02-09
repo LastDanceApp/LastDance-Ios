@@ -9,17 +9,21 @@
 /* Begin PBXBuildFile section */
 		06FCF078FC77939941CFA046 /* LastDanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E21BBF6C4E0335843C8743 /* LastDanceApp.swift */; };
 		1CBFA40C7B777539C2E73A63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657C5D82925FA51DA5382738 /* ContentView.swift */; };
-		371732EFD352D07A10A99129 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BABA587AB68202D029DB34A /* ButtonStyles.swift */; };
+		26B5C0A8D6833F4A20BF2F90 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27B1F06CE4BE07EB90D1B39 /* ProgressView.swift */; };
+		3791C6FA2F3A5C140058303E /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3791C6F92F3A5C140058303E /* TabBar.swift */; };
 		50327601EAFECE898607A46A /* LDLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FC8A9BD44C42149DEFA28B /* LDLayout.swift */; };
+		54320362E9A8FE1C0C8D509B /* TodoStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8D4FF1A3E63961F0FE5CA0 /* TodoStatus.swift */; };
 		54E34B1CBB7D43FE5DB944C5 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7AE43EBAE57CB2115F18DC /* UserModel.swift */; };
 		5B734D795501F74651CBDFD2 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAB9452F4063033656DB873 /* UserViewModel.swift */; };
 		79D9DD3FF880E2E1B5A7FE75 /* TuistAssets+LastDance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A475AF12276B7AE9E8DB38 /* TuistAssets+LastDance.swift */; };
+		801A9A568216644C85221799 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621888197D0B7CBEB333B11 /* ButtonStyles.swift */; };
 		8B58DBD5930D8C3A22417EE5 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = D380926B4EACC2E90982412C /* Header.swift */; };
 		9423E6BC6020C63E355A4DF9 /* LDTypography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A036680D0264795AD530983 /* LDTypography.swift */; };
 		A99B3ADEF963AA98B430A380 /* LDColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAC5B3D299E6CD56790B3B2 /* LDColor.swift */; };
 		AD9A68105A5AC39C1494AD95 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B1CDAE71C2812629FEA03 /* UserView.swift */; };
+		B8C1625965025B52B2800175 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E7F2C91150A7852FBB7CFC /* TodoView.swift */; };
 		CA79FF8894746FA55B7D7404 /* LDComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A9E9F343CD40B01E59D2D /* LDComponents.swift */; };
-		E336A0B4D118B3B87D4C8AD1 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD731D596134A726DDB777EB /* ActionButton.swift */; };
+		DB8DC0ED4DC4BA7A9D95B5E8 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2210674D23217DBB1DFE73 /* ActionButton.swift */; };
 		F500D4D0872E0C4ACA8C90D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C88E14D7BCBB6EA5224DE8BE /* Preview Assets.xcassets */; };
 		F5DE902E5188024C01403B43 /* TuistBundle+LastDance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1393640FD0DB5F80C824145C /* TuistBundle+LastDance.swift */; };
 		FB0AFB6F51BB32B68B11BDD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D0369C6389D5981844A957B /* Assets.xcassets */; };
@@ -39,13 +43,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0621888197D0B7CBEB333B11 /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		0C8D4FF1A3E63961F0FE5CA0 /* TodoStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoStatus.swift; sourceTree = "<group>"; };
 		1393640FD0DB5F80C824145C /* TuistBundle+LastDance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+LastDance.swift"; sourceTree = "<group>"; };
 		1D7AE43EBAE57CB2115F18DC /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		28FC8A9BD44C42149DEFA28B /* LDLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDLayout.swift; sourceTree = "<group>"; };
 		34A475AF12276B7AE9E8DB38 /* TuistAssets+LastDance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+LastDance.swift"; sourceTree = "<group>"; };
+		3791C6F92F3A5C140058303E /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		3BAB9452F4063033656DB873 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
-		4BABA587AB68202D029DB34A /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		4E2210674D23217DBB1DFE73 /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
 		53E21BBF6C4E0335843C8743 /* LastDanceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastDanceApp.swift; sourceTree = "<group>"; };
+		55E7F2C91150A7852FBB7CFC /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
 		5DAC5B3D299E6CD56790B3B2 /* LDColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDColor.swift; sourceTree = "<group>"; };
 		60F923E0C7FBADF77B364C31 /* LastDance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LastDance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		639A9E9F343CD40B01E59D2D /* LDComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDComponents.swift; sourceTree = "<group>"; };
@@ -53,14 +61,14 @@
 		7A036680D0264795AD530983 /* LDTypography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDTypography.swift; sourceTree = "<group>"; };
 		7D0369C6389D5981844A957B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		801B1CDAE71C2812629FEA03 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
-		AD731D596134A726DDB777EB /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
 		C88E14D7BCBB6EA5224DE8BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D27B1F06CE4BE07EB90D1B39 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		D380926B4EACC2E90982412C /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		FD576EE22317307216D758E6 /* LastDance-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "LastDance-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		F8CD2A812F3A448300752A23 /* Main */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Main; sourceTree = "<group>"; };
+		3703586E2F3A6D8300078100 /* TodoDetails */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = TodoDetails; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +101,9 @@
 		0F5C99413AE41E9ABF8A5BC7 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				F8CD2A812F3A448300752A23 /* Main */,
+				3703586E2F3A6D8300078100 /* TodoDetails */,
 				CA4D47744BA26F4C58161349 /* LoginSingup */,
+				1CB1155EA98AA65D28E0D932 /* Main */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -105,6 +114,16 @@
 				801B1CDAE71C2812629FEA03 /* UserView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		1CB1155EA98AA65D28E0D932 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9015ECC8BF956A34AD6AB9CA /* Components */,
+				E58A0BD82D19665E35F37CBA /* Enums */,
+				8F68B8C696CE766566FB4372 /* View */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		1F1AAAFAF84219911F4C8A80 /* Common */ = {
@@ -160,12 +179,29 @@
 			);
 			sourceTree = "<group>";
 		};
+		8F68B8C696CE766566FB4372 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				55E7F2C91150A7852FBB7CFC /* TodoView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9015ECC8BF956A34AD6AB9CA /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D27B1F06CE4BE07EB90D1B39 /* ProgressView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		A4757A8D86985B141D53872C /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				4E2210674D23217DBB1DFE73 /* ActionButton.swift */,
+				0621888197D0B7CBEB333B11 /* ButtonStyles.swift */,
 				D380926B4EACC2E90982412C /* Header.swift */,
-				AD731D596134A726DDB777EB /* ActionButton.swift */,
-				4BABA587AB68202D029DB34A /* ButtonStyles.swift */,
+				3791C6F92F3A5C140058303E /* TabBar.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -235,6 +271,14 @@
 			path = LoginSingup;
 			sourceTree = "<group>";
 		};
+		E58A0BD82D19665E35F37CBA /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				0C8D4FF1A3E63961F0FE5CA0 /* TodoStatus.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -252,7 +296,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				F8CD2A812F3A448300752A23 /* Main */,
+				3703586E2F3A6D8300078100 /* TodoDetails */,
 			);
 			name = LastDance;
 			packageProductDependencies = (
@@ -309,17 +353,21 @@
 			files = (
 				79D9DD3FF880E2E1B5A7FE75 /* TuistAssets+LastDance.swift in Sources */,
 				F5DE902E5188024C01403B43 /* TuistBundle+LastDance.swift in Sources */,
+				DB8DC0ED4DC4BA7A9D95B5E8 /* ActionButton.swift in Sources */,
+				801A9A568216644C85221799 /* ButtonStyles.swift in Sources */,
 				8B58DBD5930D8C3A22417EE5 /* Header.swift in Sources */,
-				E336A0B4D118B3B87D4C8AD1 /* ActionButton.swift in Sources */,
-				371732EFD352D07A10A99129 /* ButtonStyles.swift in Sources */,
 				1CBFA40C7B777539C2E73A63 /* ContentView.swift in Sources */,
 				A99B3ADEF963AA98B430A380 /* LDColor.swift in Sources */,
 				CA79FF8894746FA55B7D7404 /* LDComponents.swift in Sources */,
 				50327601EAFECE898607A46A /* LDLayout.swift in Sources */,
+				3791C6FA2F3A5C140058303E /* TabBar.swift in Sources */,
 				9423E6BC6020C63E355A4DF9 /* LDTypography.swift in Sources */,
 				54E34B1CBB7D43FE5DB944C5 /* UserModel.swift in Sources */,
 				5B734D795501F74651CBDFD2 /* UserViewModel.swift in Sources */,
 				AD9A68105A5AC39C1494AD95 /* UserView.swift in Sources */,
+				26B5C0A8D6833F4A20BF2F90 /* ProgressView.swift in Sources */,
+				54320362E9A8FE1C0C8D509B /* TodoStatus.swift in Sources */,
+				B8C1625965025B52B2800175 /* TodoView.swift in Sources */,
 				06FCF078FC77939941CFA046 /* LastDanceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
