@@ -16,9 +16,12 @@ public struct LDButtonStyle: ButtonStyle {
     public func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .font(LDTypography.headline.font)
-            .padding(.horizontal, LDSpacing.s16)
+            .padding(.horizontal, LDSpacing.s24)
             .frame(minHeight: LDLayout.minTouch)
-            .background(backgroundColor)
+            .background(
+                RoundedRectangle(cornerRadius: LDRadius.textField, style: .continuous)
+                    .fill(backgroundColor)
+            )
             .overlay(border)
             .foregroundStyle(foregroundColor)
             .opacity(configuration.isPressed ? 0.7 : 1)
@@ -29,39 +32,36 @@ public struct LDButtonStyle: ButtonStyle {
     private var backgroundColor: Color {
         switch kind {
         case .primary:
-            return Color.clear
+            return LDColor.primary
         case .secondary:
             return LDColor.systemGray6
         case .destructive:
-            return Color.clear
+            return Color(UIColor.systemRed)
         }
     }
 
     private var foregroundColor: Color {
         switch kind {
         case .primary:
-            return LDColor.primary
+            return Color.white
         case .secondary:
             return LDColor.label
         case .destructive:
-            return Color(UIColor.systemRed)
+            return Color.white
         }
     }
 
     private var border: some View {
-        let color: Color = {
-            switch kind {
-            case .primary:
-                return LDColor.primary
-            case .secondary:
-                return LDColor.systemGray4
-            case .destructive:
-                return Color(UIColor.systemRed)
+        Group {
+            if kind == .secondary {
+                RoundedRectangle(cornerRadius: LDRadius.textField, style: .continuous)
+                    .stroke(LDColor.systemGray4, lineWidth: 1)
             }
-        }()
-
-        return RoundedRectangle(cornerRadius: LDRadius.textField, style: .continuous)
-            .stroke(color, lineWidth: 1)
+            if kind == .primary {
+                RoundedRectangle(cornerRadius: LDRadius.button, style: .circular)
+                    .stroke(LDColor.systemGray4, lineWidth: 1)
+            }
+        }
     }
 }
 

@@ -32,6 +32,7 @@ public enum LDGrid {
 public enum LDRadius {
     public static let textField = CGFloat(12)
     public static let card = CGFloat(16)
+    public static let button = CGFloat(16)
 }
 
 public enum LDAnimation {

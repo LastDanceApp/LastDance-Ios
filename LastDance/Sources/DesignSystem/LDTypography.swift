@@ -11,16 +11,16 @@ public struct LDTextStyle {
 }
 
 public enum LDTypography {
-    public static let largeTitle = LDTextStyle(size: 34, weight: .bold, lineHeight: 41)
-    public static let title1 = LDTextStyle(size: 28, weight: .regular, lineHeight: 34)
-    public static let title2 = LDTextStyle(size: 22, weight: .regular, lineHeight: 28)
-    public static let title3 = LDTextStyle(size: 20, weight: .regular, lineHeight: 25)
-    public static let headline = LDTextStyle(size: 17, weight: .semibold, lineHeight: 22)
-    public static let body = LDTextStyle(size: 17, weight: .regular, lineHeight: 22)
-    public static let callout = LDTextStyle(size: 16, weight: .regular, lineHeight: 21)
-    public static let subhead = LDTextStyle(size: 15, weight: .regular, lineHeight: 20)
-    public static let footnote = LDTextStyle(size: 13, weight: .regular, lineHeight: 18)
-    public static let caption = LDTextStyle(size: 12, weight: .regular, lineHeight: 16)
+    public static let largeTitle = LDTextStyle(size: 24, weight: .bold, lineHeight: 30)
+    public static let title1 = LDTextStyle(size: 20, weight: .bold, lineHeight: 26)
+    public static let title2 = LDTextStyle(size: 18, weight: .semibold, lineHeight: 24)
+    public static let title3 = LDTextStyle(size: 16, weight: .semibold, lineHeight: 22)
+    public static let headline = LDTextStyle(size: 16, weight: .semibold, lineHeight: 22)
+    public static let body = LDTextStyle(size: 14, weight: .regular, lineHeight: 20)
+    public static let callout = LDTextStyle(size: 14, weight: .regular, lineHeight: 20)
+    public static let subhead = LDTextStyle(size: 13, weight: .regular, lineHeight: 18)
+    public static let footnote = LDTextStyle(size: 12, weight: .regular, lineHeight: 16)
+    public static let caption = LDTextStyle(size: 11, weight: .regular, lineHeight: 14)
 }
 
 public extension Text {
