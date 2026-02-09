@@ -2,7 +2,13 @@ import SwiftUI
 import UIKit
 
 public enum LDColor {
+    // Brand
     public static let primary = Color(hex: 0x2EB2B4)
+    public static let primaryDark = Color(hex: 0x0F8F92)
+
+    // Surfaces
+    public static let bg = Color(hex: 0xF8FAFC)
+    public static let surface = Color(hex: 0xFFFFFF)
 
     public static let systemBackground = Color.dynamic(
         light: UIColor(hex: 0xFFFFFF),
@@ -17,16 +23,24 @@ public enum LDColor {
         dark: UIColor(hex: 0x2C2C2E)
     )
 
+    // Text
+    public static let textMain = Color(hex: 0x1E293B)
+    public static let textSub = Color(hex: 0x94A3B8)
+
     public static let label = Color.dynamic(
-        light: UIColor(hex: 0x000000),
+        light: UIColor(hex: 0x1E293B),
         dark: UIColor(hex: 0xFFFFFF)
     )
     public static let secondaryLabel = Color.dynamic(
-        light: UIColor(hex: 0x3C3C43),
-        dark: UIColor(hex: 0xEBEBF5)
+        light: UIColor(hex: 0x94A3B8),
+        dark: UIColor(hex: 0xCBD5E1)
     )
-    public static let tertiaryLabel = Color(hex: 0x3C3C43, alpha: 0.6)
-    public static let quaternaryLabel = Color(hex: 0x3C3C43, alpha: 0.1)
+    public static let tertiaryLabel = Color(hex: 0x94A3B8, alpha: 0.6)
+    public static let quaternaryLabel = Color(hex: 0x94A3B8, alpha: 0.1)
+
+    // Status
+    public static let danger = Color(hex: 0xEF4444)
+    public static let warning = Color(hex: 0xF59E0B)
 
     public static let systemGray = Color(hex: 0x8E8E93)
     public static let systemGray2 = Color(hex: 0xAEAEB2)
