@@ -9,7 +9,7 @@ import SwiftUI
 struct TodoCreateModal: View {
     @State private var title: String = ""
     @State private var description: String = ""
-    @State private var leftDays = 0
+    @State private var leftDays : Int? = nil
     @Environment(\.dismiss) private var dismiss
     
     let maxTitle = 20
@@ -17,11 +17,12 @@ struct TodoCreateModal: View {
     let maxDays = 30
     
     var isValid: Bool {
-        !title.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty &&
-        title.count <= maxTitle &&
-        description.count <= maxDescription &&
-        leftDays > 0 &&
-        leftDays <= maxDays
+        guard let days = leftDays else { return false }
+        return !title.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty &&
+            title.count <= maxTitle &&
+            description.count <= maxDescription &&
+            days > 0 &&
+            days <= maxDays
     }
     
     var body: some View {
@@ -31,59 +32,63 @@ struct TodoCreateModal: View {
                     .bold()
                     .foregroundColor(LDColor.Text.primary)
                 Spacer()
+                Button(){
+                    dismiss()
+                } label: {
+                    Image(systemName: "xmark")
+                        .font(.system(size: 20, weight: .bold))
+                        .foregroundColor(LDColor.Text.secondary)
+                }
             }
+            .padding(.bottom, 30)
             HStack{
                 Text("약속 이름")
                     .font(.system(size: 15, weight: .medium))
-                TextField("예: 매일 아침 글쓰기", text: $title)
-                    .ldTextFieldStyle()
-                    .overlay(
-                        HStack {
-                            Spacer()
-                            Text("\(title.count)/\(maxTitle)")
-                                .font(.caption)
-                                .foregroundColor(LDColor.Text.secondary)
-                                .padding(.trailing, 12)
-                        }
-                    )
+                Spacer()
+                Text("\(title.count)/\(maxTitle)")
+                    .font(.caption)
+                    .foregroundColor(LDColor.Text.secondary)
+                    .padding(.trailing, 12)
+            }
+            // 약속 제목
+            TextInput(exText: "약속 이름을 입력하세요", text: $title, maxText: maxTitle, height: 1)
+            // 약속 설명
+            HStack{
+                Text("설명")
+                    .font(.system(size: 15, weight: .medium))
+                Spacer()
+                Text("\(description.count)/\(maxDescription)")
+                    .font(.caption)
+                    .foregroundColor(LDColor.Text.secondary)
+                    .padding(.trailing, 12)
+            }
+            TextInput(exText: "약속 설명을 입력하세요", text: $description,maxText: maxDescription, height: 3)
+            // 임계일
+            HStack{
+                Text("임계일(며칠까지 안 해도 되나요?)")
+                    .font(.system(size: 15, weight: .medium))
                 Spacer()
             }
-            Text("설명")
-                .font(.system(size: 15, weight: .medium))
-            TextField("약속에 대한 설명을 입력하세요",text: $description)
-                .ldTextFieldStyle()
-                .overlay(
-                    HStack {
-                        Spacer()
-                        Text("\(description.count)/\(maxDescription)")
-                            .font(.caption)
-                            .foregroundColor(LDColor.Text.secondary)
-                            .padding(.trailing, 12)
-                    }
-                )
-            Text("임계일(며칠까지 안 해도 되나요?)")
-                .font(.system(size: 15, weight: .medium))
-            TextField("7", value : $leftDays, format: .number)
-                .keyboardType(.numberPad)
-                .ldTextFieldStyle()
-                .overlay(
-                    HStack {
-                        Spacer()
-                        Text("\(description.count)/\(maxDays)")
-                            .font(.caption)
-                            .foregroundColor(LDColor.Text.secondary)
-                            .padding(.trailing, 12)
-                    }
-                )
+            NumInput(exText: "임계일을 입력하세요", value: $leftDays, maxValue: 30, height: 1)
+                .padding(.bottom, 20)
+            // 버튼 섹션
             HStack {
                 ActionButton(title: "취소", action: {
                     dismiss()
                 })
+                .padding(12)
                 .modifier(SecondaryButtonStyle())
                 ActionButton(title: "생성", action: {})
+                    .modifier(PrimaryButtonStyle())
             }
             
         }
+        .padding(.horizontal, 30)
+        .padding(.vertical, 20)
     }
     
+}
+
+#Preview {
+    TodoCreateModal()
 }

@@ -3,6 +3,8 @@ import SwiftUI
 struct Header: View {
     
     let title: String
+    @Binding var isSideMenuOpen : Bool
+    
     
     var body: some View{
         HStack(spacing: LDSpacing.s8) {
@@ -19,10 +21,14 @@ struct Header: View {
             Spacer()
 
             HStack(spacing: LDSpacing.s12) {
-                Image("bell.badge")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 20, height: 20)
+                Button {
+                     isSideMenuOpen = true
+                 } label: {
+                     Image("bell.badge")
+                         .resizable()
+                         .scaledToFit()
+                         .frame(width: 20, height: 20)
+                 }
 
                 Image("person")
                     .resizable()
@@ -41,6 +47,6 @@ struct Header: View {
 }
 
 #Preview {
-    Header(title: "습관 증인")
+    Header(title: "습관 증인", isSideMenuOpen: .constant(false))
 }
 
