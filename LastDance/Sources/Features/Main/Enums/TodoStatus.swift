@@ -1,9 +1,4 @@
-//
-//  TodoStatus.swift
-//  LastDance
-//
-//  Created by 이지원 on 2/10/26.
-//
+
 import SwiftUI
 
 enum TodoStatus {
@@ -11,9 +6,9 @@ enum TodoStatus {
 
     var text: String {
         switch self {
-        case .critical: return "critical"
-        case .warning: return "warning"
-        case .safe: return "safe"
+        case .critical: return "CRITICAL"
+        case .warning: return "WARNING"
+        case .safe: return "SAFE"
         }
     }
 
@@ -25,3 +20,4 @@ enum TodoStatus {
         }
     }
 }
+
