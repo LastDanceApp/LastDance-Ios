@@ -8,14 +8,61 @@
 import SwiftUI
 
 struct TodoCardView : View {
+    let memberName: String?
     let title : String
     let leftDays: Int
     let status : TodoStatus
     let limitDays : Int
     let watchersNum : Int
     
+    // 모든 필드 받는 생성자
+    init(
+        memberName: String?,
+        title: String,
+        leftDays: Int,
+        status: TodoStatus,
+        limitDays: Int,
+        watchersNum: Int
+    ) {
+        self.memberName = memberName
+        self.title = title
+        self.leftDays = leftDays
+        self.status = status
+        self.limitDays = limitDays
+        self.watchersNum = watchersNum
+    }
+
+    // memberName 없이 사용하는 생성자
+    init(
+        title: String,
+        leftDays: Int,
+        status: TodoStatus,
+        limitDays: Int,
+        watchersNum: Int
+    ) {
+        self.memberName = nil
+        self.title = title
+        self.leftDays = leftDays
+        self.status = status
+        self.limitDays = limitDays
+        self.watchersNum = watchersNum
+    }
+    
     var body: some View {
         VStack(spacing: LDSpacing.s12){
+            if let memberName {
+                HStack {
+                    Image("person")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 10, height: 10)
+                    Text(memberName)
+                        .font(.system(size: LDTypography.footnote.size))
+                        .foregroundStyle(LDColor.Text.secondary)
+                    Spacer()
+                }
+            }
+
             HStack{
                 Text(title)
                     .font(.headline)
@@ -57,5 +104,6 @@ struct TodoCardView : View {
 }
 
 #Preview {
-    TodoCardView(title: "할일 하기", leftDays: 10, status: TodoStatus.critical, limitDays: 30, watchersNum: 10)
+    TodoCardView(memberName:"김철수", title: "할일 하기", leftDays: 10, status: TodoStatus.critical, limitDays: 30, watchersNum: 10)
 }
+

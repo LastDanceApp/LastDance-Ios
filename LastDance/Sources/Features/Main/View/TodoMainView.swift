@@ -13,9 +13,13 @@ let sampleTodos: [TodoResponseDTO] = [
     .init(id: 4, title: "러닝 3km", leftDays: 0, status: .safe, limitDays: 4, watchersNum: 1, isChecked: false),
     .init(id: 5, title: "러닝 3km", leftDays: 0, status: .safe, limitDays: 3, watchersNum: 1, isChecked: false),
 ]
+
 struct TodoMainView: View {
     @State private var showModal: Bool = false
+    @State private var showDetailModal: Bool = false
+    @State private var selectedTodo: TodoResponseDTO?
     @State private var isSideMenuOpen: Bool = false
+
     
     var body: some View {
         ZStack(alignment: .trailing) {
@@ -23,10 +27,10 @@ struct TodoMainView: View {
             
             if isSideMenuOpen {
                 AlarmSideViewContent(isPresented: $isSideMenuOpen, widthRatio: 0.9) {
-                                  AlarmMainView(isPresented: $isSideMenuOpen)
-                                      .background(Color.white)
-                                      .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-                              }
+                      AlarmMainView(isPresented: $isSideMenuOpen)
+                          .background(Color.white)
+                          .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+                  }
             }
         }
     }
@@ -36,7 +40,10 @@ struct TodoMainView: View {
             Header(title: "습관 증인", isSideMenuOpen: $isSideMenuOpen)
             TabBar(content1: "내 약속", content2: "내가 지켜보는 약속")
             ZStack(alignment: .bottomTrailing) {
-                TodoListView(todos: sampleTodos)
+                TodoListView(todos: sampleTodos){ todo in
+                    selectedTodo = todo
+                    showDetailModal = true
+                }
                 FloatingCreateButton(isEnabled: true) {
                     showModal = true
                 }
@@ -45,6 +52,16 @@ struct TodoMainView: View {
                 }
                 .padding(.trailing, 20)
                 .padding(.bottom, 24)
+            }
+            .padding(.trailing,20)
+            .padding(.bottom,24)
+            
+        }
+        .sheet(isPresented: $showDetailModal, onDismiss: {
+            selectedTodo = nil
+        }) {
+            if let selectedTodo {
+                DetailModal(dto: selectedTodo, members: WitnessMemberDTO.dummyList)
             }
         }
     }

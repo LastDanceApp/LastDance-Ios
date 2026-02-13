@@ -3,28 +3,48 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		06FCF078FC77939941CFA046 /* LastDanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E21BBF6C4E0335843C8743 /* LastDanceApp.swift */; };
-		1CBFA40C7B777539C2E73A63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657C5D82925FA51DA5382738 /* ContentView.swift */; };
+		0B6ECE2DCCA1B7B46EC7A33F /* Witness.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB79B4D7534725E37EC99FEA /* Witness.swift */; };
+		0E1A399EBE1A422E7B8B5791 /* TodoForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F393D2DB53052D9E106C51 /* TodoForm.swift */; };
+		11AEF9DE17BF0222630C80EE /* DetailMessageModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D3849115875A638558BC88 /* DetailMessageModal.swift */; };
+		1E4141FE4E26747D82D39A60 /* WitnessMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B02BB54CA37788C4E35996 /* WitnessMember.swift */; };
 		26B5C0A8D6833F4A20BF2F90 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D27B1F06CE4BE07EB90D1B39 /* ProgressView.swift */; };
-		3791C6FA2F3A5C140058303E /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3791C6F92F3A5C140058303E /* TabBar.swift */; };
+		37C6DF083D4A16578EF4BA3B /* TodoResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B790291E05B7BCA00BE60A8C /* TodoResponseDTO.swift */; };
+		4871ACAC5228BBC7A6ED1C6F /* FloatingCreateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A7B009BC2E4E0B55AE28C /* FloatingCreateButton.swift */; };
 		50327601EAFECE898607A46A /* LDLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FC8A9BD44C42149DEFA28B /* LDLayout.swift */; };
+		51F05AD3D449DF0C76C4F1AF /* DetailModalCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4153F1ECE10C2118F686246C /* DetailModalCommon.swift */; };
 		54320362E9A8FE1C0C8D509B /* TodoStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8D4FF1A3E63961F0FE5CA0 /* TodoStatus.swift */; };
 		54E34B1CBB7D43FE5DB944C5 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7AE43EBAE57CB2115F18DC /* UserModel.swift */; };
+		5743A5C3647E7BEAE68A5AD9 /* FastMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654DFA720B2A2E48574F5038 /* FastMessage.swift */; };
+		57CEA5586125EC38E446C9E0 /* NumInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6700D2CBE425A2C898080A2 /* NumInput.swift */; };
 		5B734D795501F74651CBDFD2 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAB9452F4063033656DB873 /* UserViewModel.swift */; };
+		5EE3E7849C611FA18F6C93B5 /* AlarmMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5CBD00697D95872512CF66 /* AlarmMainView.swift */; };
 		79D9DD3FF880E2E1B5A7FE75 /* TuistAssets+LastDance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A475AF12276B7AE9E8DB38 /* TuistAssets+LastDance.swift */; };
+		7D76E89B2AF65D66C785447E /* AlarmSideViewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216E6D8EC3CC156E68C8D604 /* AlarmSideViewContent.swift */; };
+		7FA44E63BE781D6D31B99E8E /* TodoDetailButtonSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA6FC9360770FE6DEF5C8461 /* TodoDetailButtonSection.swift */; };
 		801A9A568216644C85221799 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621888197D0B7CBEB333B11 /* ButtonStyles.swift */; };
+		8A74111A8BDE4ADB64AF6091 /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7437AA1AEA295EDB5BFF58E /* TextInput.swift */; };
 		8B58DBD5930D8C3A22417EE5 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = D380926B4EACC2E90982412C /* Header.swift */; };
 		9423E6BC6020C63E355A4DF9 /* LDTypography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A036680D0264795AD530983 /* LDTypography.swift */; };
+		A3EC05F4D4C249D7F81CB79B /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6737FAC09F9A531874094A /* TodoListView.swift */; };
 		A99B3ADEF963AA98B430A380 /* LDColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAC5B3D299E6CD56790B3B2 /* LDColor.swift */; };
 		AD9A68105A5AC39C1494AD95 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801B1CDAE71C2812629FEA03 /* UserView.swift */; };
+		B57BC4E6D57EBAD40289654B /* DetailModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00A1C7C05FE3B4687FDA6D1 /* DetailModal.swift */; };
 		B8C1625965025B52B2800175 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E7F2C91150A7852FBB7CFC /* TodoView.swift */; };
+		C3DA41DBAF4D8F6A0EB35489 /* TodoCreateModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081693907DF15188A5A22CC9 /* TodoCreateModal.swift */; };
 		CA79FF8894746FA55B7D7404 /* LDComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A9E9F343CD40B01E59D2D /* LDComponents.swift */; };
 		DB8DC0ED4DC4BA7A9D95B5E8 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2210674D23217DBB1DFE73 /* ActionButton.swift */; };
+		E2B4EF45B50E948574511FFC /* TodoMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E087F6FCDAB2EE20E56406FD /* TodoMainView.swift */; };
+		E9F4E4DFC33DDAF33B36353E /* AlarmListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE98F9F4B70889122EA3736 /* AlarmListView.swift */; };
+		EC916D0D34D088BF4451EFF3 /* WitnessMemberDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFBFD93FB5315C31141541 /* WitnessMemberDTO.swift */; };
+		ED7714EB1B172FBF828BAD4E /* AlarmDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E940FB2B312AA0FABB5A260 /* AlarmDTO.swift */; };
+		F0A51A268EEDC892DF4970C8 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016C52C94BD3C8B55F530128 /* TabBar.swift */; };
 		F500D4D0872E0C4ACA8C90D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C88E14D7BCBB6EA5224DE8BE /* Preview Assets.xcassets */; };
+		F565880CF5E4DEDFC5AAC542 /* TodoDetailButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ADCD556453E81A509671A4 /* TodoDetailButton.swift */; };
 		F5DE902E5188024C01403B43 /* TuistBundle+LastDance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1393640FD0DB5F80C824145C /* TuistBundle+LastDance.swift */; };
 		FB0AFB6F51BB32B68B11BDD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D0369C6389D5981844A957B /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -43,33 +63,49 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		016C52C94BD3C8B55F530128 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		0621888197D0B7CBEB333B11 /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		081693907DF15188A5A22CC9 /* TodoCreateModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCreateModal.swift; sourceTree = "<group>"; };
 		0C8D4FF1A3E63961F0FE5CA0 /* TodoStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoStatus.swift; sourceTree = "<group>"; };
 		1393640FD0DB5F80C824145C /* TuistBundle+LastDance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+LastDance.swift"; sourceTree = "<group>"; };
 		1D7AE43EBAE57CB2115F18DC /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		1F4A7B009BC2E4E0B55AE28C /* FloatingCreateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingCreateButton.swift; sourceTree = "<group>"; };
+		216E6D8EC3CC156E68C8D604 /* AlarmSideViewContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmSideViewContent.swift; sourceTree = "<group>"; };
 		28FC8A9BD44C42149DEFA28B /* LDLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDLayout.swift; sourceTree = "<group>"; };
+		2FE98F9F4B70889122EA3736 /* AlarmListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListView.swift; sourceTree = "<group>"; };
 		34A475AF12276B7AE9E8DB38 /* TuistAssets+LastDance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistAssets+LastDance.swift"; sourceTree = "<group>"; };
-		3791C6F92F3A5C140058303E /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		3BAB9452F4063033656DB873 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		3E5CBD00697D95872512CF66 /* AlarmMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmMainView.swift; sourceTree = "<group>"; };
+		4153F1ECE10C2118F686246C /* DetailModalCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModalCommon.swift; sourceTree = "<group>"; };
 		4E2210674D23217DBB1DFE73 /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
 		53E21BBF6C4E0335843C8743 /* LastDanceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastDanceApp.swift; sourceTree = "<group>"; };
+		53F393D2DB53052D9E106C51 /* TodoForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoForm.swift; sourceTree = "<group>"; };
 		55E7F2C91150A7852FBB7CFC /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
+		59ADCD556453E81A509671A4 /* TodoDetailButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailButton.swift; sourceTree = "<group>"; };
 		5DAC5B3D299E6CD56790B3B2 /* LDColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDColor.swift; sourceTree = "<group>"; };
 		60F923E0C7FBADF77B364C31 /* LastDance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LastDance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		639A9E9F343CD40B01E59D2D /* LDComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDComponents.swift; sourceTree = "<group>"; };
-		657C5D82925FA51DA5382738 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		654DFA720B2A2E48574F5038 /* FastMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastMessage.swift; sourceTree = "<group>"; };
+		68D3849115875A638558BC88 /* DetailMessageModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMessageModal.swift; sourceTree = "<group>"; };
+		6ACFBFD93FB5315C31141541 /* WitnessMemberDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitnessMemberDTO.swift; sourceTree = "<group>"; };
 		7A036680D0264795AD530983 /* LDTypography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDTypography.swift; sourceTree = "<group>"; };
 		7D0369C6389D5981844A957B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		801B1CDAE71C2812629FEA03 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		8E940FB2B312AA0FABB5A260 /* AlarmDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmDTO.swift; sourceTree = "<group>"; };
+		A00A1C7C05FE3B4687FDA6D1 /* DetailModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModal.swift; sourceTree = "<group>"; };
+		A1B02BB54CA37788C4E35996 /* WitnessMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WitnessMember.swift; sourceTree = "<group>"; };
+		A6700D2CBE425A2C898080A2 /* NumInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumInput.swift; sourceTree = "<group>"; };
+		A7437AA1AEA295EDB5BFF58E /* TextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInput.swift; sourceTree = "<group>"; };
+		B790291E05B7BCA00BE60A8C /* TodoResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoResponseDTO.swift; sourceTree = "<group>"; };
+		BA6FC9360770FE6DEF5C8461 /* TodoDetailButtonSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailButtonSection.swift; sourceTree = "<group>"; };
 		C88E14D7BCBB6EA5224DE8BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CB79B4D7534725E37EC99FEA /* Witness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Witness.swift; sourceTree = "<group>"; };
 		D27B1F06CE4BE07EB90D1B39 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		D380926B4EACC2E90982412C /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		DA6737FAC09F9A531874094A /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
+		E087F6FCDAB2EE20E56406FD /* TodoMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoMainView.swift; sourceTree = "<group>"; };
 		FD576EE22317307216D758E6 /* LastDance-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "LastDance-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		3703586E2F3A6D8300078100 /* TodoDetails */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = TodoDetails; sourceTree = "<group>"; };
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		17C00311767D2F263036BD6A /* Frameworks */ = {
@@ -101,11 +137,21 @@
 		0F5C99413AE41E9ABF8A5BC7 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				3703586E2F3A6D8300078100 /* TodoDetails */,
+				7FEFF9EFB53ED4A7B32D758B /* CreateTodoModal */,
 				CA4D47744BA26F4C58161349 /* LoginSingup */,
 				1CB1155EA98AA65D28E0D932 /* Main */,
+				D37AB67AC94DAEA209DAB553 /* SideBar */,
+				F3FC577C4C3E702967D347BF /* TodoDetails */,
 			);
 			path = Features;
+			sourceTree = "<group>";
+		};
+		0FFE4BDFBB7B795C1A8D532C /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				6ACFBFD93FB5315C31141541 /* WitnessMemberDTO.swift */,
+			);
+			path = DTO;
 			sourceTree = "<group>";
 		};
 		198E5CD81AC185EE81BC7B7E /* Views */ = {
@@ -120,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				9015ECC8BF956A34AD6AB9CA /* Components */,
+				A5FEE7008F500B39CE567301 /* DTO */,
 				E58A0BD82D19665E35F37CBA /* Enums */,
 				8F68B8C696CE766566FB4372 /* View */,
 			);
@@ -179,9 +226,27 @@
 			);
 			sourceTree = "<group>";
 		};
+		7FEFF9EFB53ED4A7B32D758B /* CreateTodoModal */ = {
+			isa = PBXGroup;
+			children = (
+				B5F0689EC90759CE219F1F4D /* View */,
+			);
+			path = CreateTodoModal;
+			sourceTree = "<group>";
+		};
+		8BE0FED1A4A85922858E7C46 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				8E940FB2B312AA0FABB5A260 /* AlarmDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
 		8F68B8C696CE766566FB4372 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DA6737FAC09F9A531874094A /* TodoListView.swift */,
+				E087F6FCDAB2EE20E56406FD /* TodoMainView.swift */,
 				55E7F2C91150A7852FBB7CFC /* TodoView.swift */,
 			);
 			path = View;
@@ -190,9 +255,30 @@
 		9015ECC8BF956A34AD6AB9CA /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1F4A7B009BC2E4E0B55AE28C /* FloatingCreateButton.swift */,
 				D27B1F06CE4BE07EB90D1B39 /* ProgressView.swift */,
+				53F393D2DB53052D9E106C51 /* TodoForm.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		906FA7BD148D22072DCFC920 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2FE98F9F4B70889122EA3736 /* AlarmListView.swift */,
+				3E5CBD00697D95872512CF66 /* AlarmMainView.swift */,
+				216E6D8EC3CC156E68C8D604 /* AlarmSideViewContent.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		957972DCD4B5A518D7194873 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				68D3849115875A638558BC88 /* DetailMessageModal.swift */,
+				A00A1C7C05FE3B4687FDA6D1 /* DetailModal.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		A4757A8D86985B141D53872C /* Components */ = {
@@ -201,9 +287,19 @@
 				4E2210674D23217DBB1DFE73 /* ActionButton.swift */,
 				0621888197D0B7CBEB333B11 /* ButtonStyles.swift */,
 				D380926B4EACC2E90982412C /* Header.swift */,
-				3791C6F92F3A5C140058303E /* TabBar.swift */,
+				A6700D2CBE425A2C898080A2 /* NumInput.swift */,
+				016C52C94BD3C8B55F530128 /* TabBar.swift */,
+				A7437AA1AEA295EDB5BFF58E /* TextInput.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		A5FEE7008F500B39CE567301 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				B790291E05B7BCA00BE60A8C /* TodoResponseDTO.swift */,
+			);
+			path = DTO;
 			sourceTree = "<group>";
 		};
 		A7D490B3ACEC18DCE7BD0389 /* Project */ = {
@@ -232,13 +328,20 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		B5F0689EC90759CE219F1F4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				081693907DF15188A5A22CC9 /* TodoCreateModal.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		BB04DFB0A5A88B3AF72FAFA6 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				1F1AAAFAF84219911F4C8A80 /* Common */,
 				5FB62F32AD5142F97DCE41F4 /* DesignSystem */,
 				0F5C99413AE41E9ABF8A5BC7 /* Features */,
-				657C5D82925FA51DA5382738 /* ContentView.swift */,
 				53E21BBF6C4E0335843C8743 /* LastDanceApp.swift */,
 			);
 			path = Sources;
@@ -271,12 +374,44 @@
 			path = LoginSingup;
 			sourceTree = "<group>";
 		};
+		D37AB67AC94DAEA209DAB553 /* SideBar */ = {
+			isa = PBXGroup;
+			children = (
+				8BE0FED1A4A85922858E7C46 /* DTO */,
+				906FA7BD148D22072DCFC920 /* View */,
+			);
+			path = SideBar;
+			sourceTree = "<group>";
+		};
+		D8C15642F9A1007636C4E732 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4153F1ECE10C2118F686246C /* DetailModalCommon.swift */,
+				654DFA720B2A2E48574F5038 /* FastMessage.swift */,
+				59ADCD556453E81A509671A4 /* TodoDetailButton.swift */,
+				BA6FC9360770FE6DEF5C8461 /* TodoDetailButtonSection.swift */,
+				CB79B4D7534725E37EC99FEA /* Witness.swift */,
+				A1B02BB54CA37788C4E35996 /* WitnessMember.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		E58A0BD82D19665E35F37CBA /* Enums */ = {
 			isa = PBXGroup;
 			children = (
 				0C8D4FF1A3E63961F0FE5CA0 /* TodoStatus.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		F3FC577C4C3E702967D347BF /* TodoDetails */ = {
+			isa = PBXGroup;
+			children = (
+				D8C15642F9A1007636C4E732 /* Components */,
+				0FFE4BDFBB7B795C1A8D532C /* DTO */,
+				957972DCD4B5A518D7194873 /* View */,
+			);
+			path = TodoDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,9 +430,6 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				3703586E2F3A6D8300078100 /* TodoDetails */,
-			);
 			name = LastDance;
 			packageProductDependencies = (
 			);
@@ -312,6 +444,8 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
+				TargetAttributes = {
+				};
 			};
 			buildConfigurationList = 372D40E316BE269DAECE173C /* Build configuration list for PBXProject "LastDance" */;
 			compatibilityVersion = "Xcode 14.0";
@@ -356,18 +490,38 @@
 				DB8DC0ED4DC4BA7A9D95B5E8 /* ActionButton.swift in Sources */,
 				801A9A568216644C85221799 /* ButtonStyles.swift in Sources */,
 				8B58DBD5930D8C3A22417EE5 /* Header.swift in Sources */,
-				1CBFA40C7B777539C2E73A63 /* ContentView.swift in Sources */,
+				57CEA5586125EC38E446C9E0 /* NumInput.swift in Sources */,
+				F0A51A268EEDC892DF4970C8 /* TabBar.swift in Sources */,
+				8A74111A8BDE4ADB64AF6091 /* TextInput.swift in Sources */,
 				A99B3ADEF963AA98B430A380 /* LDColor.swift in Sources */,
 				CA79FF8894746FA55B7D7404 /* LDComponents.swift in Sources */,
 				50327601EAFECE898607A46A /* LDLayout.swift in Sources */,
-				3791C6FA2F3A5C140058303E /* TabBar.swift in Sources */,
 				9423E6BC6020C63E355A4DF9 /* LDTypography.swift in Sources */,
+				C3DA41DBAF4D8F6A0EB35489 /* TodoCreateModal.swift in Sources */,
 				54E34B1CBB7D43FE5DB944C5 /* UserModel.swift in Sources */,
 				5B734D795501F74651CBDFD2 /* UserViewModel.swift in Sources */,
 				AD9A68105A5AC39C1494AD95 /* UserView.swift in Sources */,
+				4871ACAC5228BBC7A6ED1C6F /* FloatingCreateButton.swift in Sources */,
 				26B5C0A8D6833F4A20BF2F90 /* ProgressView.swift in Sources */,
+				0E1A399EBE1A422E7B8B5791 /* TodoForm.swift in Sources */,
+				37C6DF083D4A16578EF4BA3B /* TodoResponseDTO.swift in Sources */,
 				54320362E9A8FE1C0C8D509B /* TodoStatus.swift in Sources */,
+				A3EC05F4D4C249D7F81CB79B /* TodoListView.swift in Sources */,
+				E2B4EF45B50E948574511FFC /* TodoMainView.swift in Sources */,
 				B8C1625965025B52B2800175 /* TodoView.swift in Sources */,
+				ED7714EB1B172FBF828BAD4E /* AlarmDTO.swift in Sources */,
+				E9F4E4DFC33DDAF33B36353E /* AlarmListView.swift in Sources */,
+				5EE3E7849C611FA18F6C93B5 /* AlarmMainView.swift in Sources */,
+				7D76E89B2AF65D66C785447E /* AlarmSideViewContent.swift in Sources */,
+				51F05AD3D449DF0C76C4F1AF /* DetailModalCommon.swift in Sources */,
+				5743A5C3647E7BEAE68A5AD9 /* FastMessage.swift in Sources */,
+				F565880CF5E4DEDFC5AAC542 /* TodoDetailButton.swift in Sources */,
+				7FA44E63BE781D6D31B99E8E /* TodoDetailButtonSection.swift in Sources */,
+				0B6ECE2DCCA1B7B46EC7A33F /* Witness.swift in Sources */,
+				1E4141FE4E26747D82D39A60 /* WitnessMember.swift in Sources */,
+				EC916D0D34D088BF4451EFF3 /* WitnessMemberDTO.swift in Sources */,
+				11AEF9DE17BF0222630C80EE /* DetailMessageModal.swift in Sources */,
+				B57BC4E6D57EBAD40289654B /* DetailModal.swift in Sources */,
 				06FCF078FC77939941CFA046 /* LastDanceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,7 +659,10 @@
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+					"$(inherited)",
+					DEBUG,
+				);
 				SWIFT_COMPILATION_MODE = singlefile;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
