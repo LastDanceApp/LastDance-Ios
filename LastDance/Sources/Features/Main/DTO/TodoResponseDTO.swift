@@ -5,6 +5,7 @@
 //  Created by 이지원 on 2/10/26.
 //
 struct TodoResponseDTO {
+    let id: Int
     let title: String
     let leftDays: Int
     let status: TodoStatus

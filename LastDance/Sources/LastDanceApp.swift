@@ -4,7 +4,7 @@ import SwiftUI
 struct LastDanceApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TodoMainView()
         }
     }
 }

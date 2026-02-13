@@ -22,6 +22,7 @@ struct DetailMessageModal: View {
 struct DetailMessageModal_Preivews: PreviewProvider {
     static var previews: some View {
         let sample = TodoResponseDTO(
+            id: 1,
             title: "매일 아침 글쓰기",
             leftDays: 12,
             status: .critical,
