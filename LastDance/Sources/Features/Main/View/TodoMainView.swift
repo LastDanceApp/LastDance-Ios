@@ -14,11 +14,16 @@ let sampleTodos: [TodoResponseDTO] = [
 struct TodoMainView: View {
  //   @State private var showCreate: Bool = true
     @State private var showModal: Bool = false
+    @State private var showDetailModal: Bool = false
+    @State private var selectedTodo: TodoResponseDTO?
     
     var body: some View {
         ZStack(alignment: .bottomTrailing){
             Header(title: "습관 증인")
-            TodoListView(todos: sampleTodos)
+            TodoListView(todos: sampleTodos) { todo in
+                selectedTodo = todo
+                showDetailModal = true
+            }
             FloatingCreateButton(isEnabled: true){
                 showModal = true
             }
@@ -27,6 +32,14 @@ struct TodoMainView: View {
             }
             .padding(.trailing,20)
             .padding(.bottom,24)
+            
+        }
+        .sheet(isPresented: $showDetailModal, onDismiss: {
+            selectedTodo = nil
+        }) {
+            if let selectedTodo {
+                DetailModal(dto: selectedTodo, members: WitnessMemberDTO.dummyList)
+            }
         }
     }
 }

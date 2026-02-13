@@ -9,6 +9,7 @@ public enum LDLayout {
 }
 
 public enum LDSpacing {
+    public static let s2 = CGFloat(2)
     public static let s4 = CGFloat(4)
     public static let s8 = CGFloat(8)
     public static let s12 = CGFloat(12)

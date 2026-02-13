@@ -8,19 +8,25 @@ import SwiftUI
 
 struct TodoListView: View {
     let todos: [TodoResponseDTO]
+    let onTap: (TodoResponseDTO) -> Void
     
     var body: some View {
         List(todos,id: \.title) { todo in
-            TodoCardView(
-                title: todo.title,
-                leftDays: todo.leftDays,
-                status: todo.status,
-                limitDays: todo.limitDays,
-                watchersNum: todo.watchersNum
-            )
+            Button {
+                onTap(todo)
+            } label: {
+                TodoCardView(
+                    title: todo.title,
+                    leftDays: todo.leftDays,
+                    status: todo.status,
+                    limitDays: todo.limitDays,
+                    watchersNum: todo.watchersNum
+                )
+                .blur(radius: todo.isChecked ? 0.6 : 0.0)
+            }
+            .buttonStyle(.plain)
             .listRowSeparator(.hidden)
             .listRowBackground(LDColor.Background.surface)
-            .blur(radius: todo.isChecked ? 0.6 : 0.0)
         }
         .listStyle(.plain)
         .scrollContentBackground(.hidden)
@@ -35,5 +41,5 @@ struct TodoListView: View {
         .init(title: "러닝 3km", leftDays: 0, status: .safe, limitDays: 3, watchersNum: 1,isChecked: false),
     ]
 
-    return TodoListView(todos: sample)
+    return TodoListView(todos: sample, onTap: { _ in })
 }
