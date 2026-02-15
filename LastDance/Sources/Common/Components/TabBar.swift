@@ -9,7 +9,7 @@ import SwiftUI
 struct TabBar: View {
     let content1: String
     let content2: String
-    @State private var selectedIndex: Int = 0 // 기본값은 첫 번째꺼
+    @Binding var selectedIndex: Int
 
     var body: some View {
         HStack(spacing: 0) {
@@ -47,6 +47,7 @@ struct TabBar: View {
 #Preview {
     TabBar(
         content1: "나의 약속",
-        content2: "내가 지켜보는 약속"
+        content2: "내가 지켜보는 약속",
+        selectedIndex: .constant(0)
     )
 }

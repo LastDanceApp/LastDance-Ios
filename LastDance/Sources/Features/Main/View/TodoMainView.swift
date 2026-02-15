@@ -7,11 +7,11 @@
 import SwiftUI
 
 let sampleTodos: [TodoResponseDTO] = [
-    .init(id: 1,title: "매일 아침 글쓰기", leftDays: 2, status: .critical, limitDays: 14, watchersNum: 2,isChecked: true),
-    .init(id: 2, title: "영어 단어 50개", leftDays: 3, status: .warning, limitDays: 7, watchersNum: 0, isChecked: false),
-    .init(id: 3, title: "러닝 3km", leftDays: 0, status: .safe, limitDays: 3, watchersNum: 1, isChecked: false),
-    .init(id: 4, title: "러닝 3km", leftDays: 0, status: .safe, limitDays: 4, watchersNum: 1, isChecked: false),
-    .init(id: 5, title: "러닝 3km", leftDays: 0, status: .safe, limitDays: 3, watchersNum: 1, isChecked: false),
+    .init(id: 1, name: "김철수", title: "매일 아침 글쓰기", leftDays: 2, status: .critical, limitDays: 14, watchersNum: 2, isChecked: true),
+    .init(id: 2, name: "이영희", title: "영어 단어 50개", leftDays: 3, status: .warning, limitDays: 7, watchersNum: 0, isChecked: false),
+    .init(id: 3, name: "박민수", title: "러닝 3km", leftDays: 0, status: .safe, limitDays: 3, watchersNum: 1, isChecked: false),
+    .init(id: 4, name: "정수진", title: "러닝 3km", leftDays: 0, status: .safe, limitDays: 4, watchersNum: 1, isChecked: false),
+    .init(id: 5, name: "오지훈", title: "러닝 3km", leftDays: 0, status: .safe, limitDays: 3, watchersNum: 1, isChecked: false),
 ]
 
 struct TodoMainView: View {
@@ -19,6 +19,7 @@ struct TodoMainView: View {
     @State private var showDetailModal: Bool = false
     @State private var selectedTodo: TodoResponseDTO?
     @State private var isSideMenuOpen: Bool = false
+    @State private var selectedTabIndex: Int = 0
 
     
     var body: some View {
@@ -38,9 +39,12 @@ struct TodoMainView: View {
     private var mainContent: some View {
         VStack(spacing: 0) {
             Header(title: "습관 증인", isSideMenuOpen: $isSideMenuOpen)
-            TabBar(content1: "내 약속", content2: "내가 지켜보는 약속")
+            TabBar(content1: "내 약속", content2: "내가 지켜보는 약속", selectedIndex: $selectedTabIndex)
             ZStack(alignment: .bottomTrailing) {
-                TodoListView(todos: sampleTodos){ todo in
+                TodoListView(
+                    todos: sampleTodos,
+                    showMemberName: selectedTabIndex == 1
+                ) { todo in
                     selectedTodo = todo
                     showDetailModal = true
                 }
@@ -61,7 +65,11 @@ struct TodoMainView: View {
             selectedTodo = nil
         }) {
             if let selectedTodo {
-                DetailModal(dto: selectedTodo, members: WitnessMemberDTO.dummyList)
+                if selectedTabIndex == 0 {
+                    DetailModal(dto: selectedTodo, members: WitnessMemberDTO.dummyList)
+                } else {
+                    DetailMessageModal(dto: selectedTodo, members: WitnessMemberDTO.dummyList)
+                }
             }
         }
     }

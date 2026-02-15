@@ -16,13 +16,17 @@ struct DetailMessageModal: View {
             FastMessage()
         }
         .padding(.top, 16)
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+        
     }
+
 }
 
 struct DetailMessageModal_Preivews: PreviewProvider {
     static var previews: some View {
         let sample = TodoResponseDTO(
             id: 1,
+            name: "김철수",
             title: "매일 아침 글쓰기",
             leftDays: 12,
             status: .critical,

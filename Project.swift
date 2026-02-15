@@ -2,7 +2,10 @@ import ProjectDescription
 
 let project = Project(
     name: "LastDance",
-    packages: [.remote(url: "https://github.com/Alamofire/Alamofire.git", requirement: .upToNextMajor(from: "5.10.0"))],
+    packages: [
+        .remote(url: "https://github.com/Alamofire/Alamofire.git", requirement: .upToNextMajor(from: "5.10.0")),
+        .remote(url: "https://github.com/Moya/Moya.git", requirement: .upToNextMajor(from: "15.0.0")),
+    ],
     targets: [
         .target(
             name: "LastDance",
@@ -23,7 +26,9 @@ let project = Project(
             resources: [
                 .glob(pattern: "LastDance/Resources/**", excluding: ["**/.gitkeep"])
             ],
-            dependencies: []
+            dependencies: [
+                .package(product: "Moya")
+            ]
         )
     ]
 )

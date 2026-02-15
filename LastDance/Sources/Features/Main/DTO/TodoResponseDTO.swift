@@ -6,6 +6,7 @@
 //
 struct TodoResponseDTO {
     let id: Int
+    let name: String
     let title: String
     let leftDays: Int
     let status: TodoStatus
